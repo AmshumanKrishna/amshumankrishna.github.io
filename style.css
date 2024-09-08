@@ -1,3 +1,4 @@
+/* General Styling */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -5,6 +6,7 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    transition: background-color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
     text-decoration: none;
     color: #007BFF;
+    transition: color 0.3s ease;
 }
 
 a:hover {
@@ -35,11 +38,13 @@ header {
     padding: 20px 0;
     text-align: center;
     border-bottom: 5px solid #0056b3;
+    transition: background-color 0.3s ease;
 }
 
 header h1 {
     font-size: 3rem;
     margin: 0;
+    transition: font-size 0.3s ease;
 }
 
 header p {
@@ -50,8 +55,11 @@ header p {
 /* Profile Section */
 .profile-section {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 50px 0;
+    justify-content: space-between;
+    transition: padding 0.3s ease;
 }
 
 .profile-section img {
@@ -60,6 +68,11 @@ header p {
     border-radius: 50%;
     margin-right: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-section img:hover {
+    transform: scale(1.05);
 }
 
 .profile-section div {
@@ -69,17 +82,29 @@ header p {
 .profile-section h2 {
     font-size: 2.5rem;
     color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.profile-section h2:hover {
+    color: #0056b3;
 }
 
 .profile-section p {
     font-size: 1.2rem;
     color: #555;
     line-height: 1.8;
+    transition: color 0.3s ease;
+}
+
+.profile-section p:hover {
+    color: #333;
 }
 
 /* Project Section */
 .project-section {
     padding: 50px 0;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
 }
 
 .project-section h2 {
@@ -90,6 +115,11 @@ header p {
     padding-bottom: 10px;
     color: #333;
     position: relative;
+    transition: font-size 0.3s ease;
+}
+
+.project-section h2:hover {
+    font-size: 3rem;
 }
 
 .project-section h2::after {
@@ -101,6 +131,11 @@ header p {
     height: 4px;
     background-color: #007BFF;
     transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.project-section h2:hover::after {
+    width: 80px;
 }
 
 .project-card {
@@ -114,7 +149,7 @@ header p {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -122,12 +157,22 @@ header p {
     font-size: 2rem;
     margin-bottom: 15px;
     color: #333;
+    transition: color 0.3s ease;
+}
+
+.project-card h3:hover {
+    color: #007BFF;
 }
 
 .project-card p {
     font-size: 1.1rem;
     color: #555;
     line-height: 1.7;
+    transition: color 0.3s ease;
+}
+
+.project-card p:hover {
+    color: #333;
 }
 
 .project-card ul {
@@ -141,6 +186,62 @@ header p {
     color: #444;
 }
 
+/* Project Page */
+.project-page {
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-left: 8px solid #007BFF;
+    transition: transform 0.3s ease;
+}
+
+.project-page:hover {
+    transform: scale(1.02);
+}
+
+.project-page h1 {
+    font-size: 3rem;
+    color: #007BFF;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.project-page h1:hover {
+    color: #0056b3;
+}
+
+.project-page p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.project-page ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.project-page ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.project-page img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-page img:hover {
+    transform: scale(1.05);
+}
+
 /* Employment Section */
 .employment-section {
     margin: 50px auto;
@@ -150,27 +251,7 @@ header p {
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     border: 1px solid #e0e0e0;
-}
-
-.employment-section h2 {
-    font-size: 2.8rem;
-    color: #333;
-    margin-bottom: 30px;
-    text-align: center;
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 10px;
-    position: relative;
-}
-
-.employment-section h2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 60px;
-    height: 4px;
-    background-color: #007BFF;
-    transform: translateX(-50%);
+    transition: padding 0.3s ease;
 }
 
 .job-card {
@@ -184,7 +265,7 @@ header p {
 }
 
 .job-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -192,6 +273,11 @@ header p {
     font-size: 2rem;
     color: #007BFF;
     margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.job-card h3:hover {
+    color: #0056b3;
 }
 
 .job-card p {
@@ -201,17 +287,6 @@ header p {
     margin-bottom: 15px;
 }
 
-.job-card ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-.job-card ul li {
-    font-size: 1rem;
-    color: #444;
-    margin-bottom: 5px;
-}
-
 /* Footer */
 footer {
     padding: 20px 0;
@@ -219,6 +294,7 @@ footer {
     background-color: #007BFF;
     color: #fff;
     border-top: 5px solid #0056b3;
+    transition: background-color 0.3s ease;
 }
 
 footer p {
@@ -226,8 +302,10 @@ footer p {
     margin: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Media Queries for Responsiveness */
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1024px) {
     .profile-section {
         flex-direction: column;
         text-align: center;
@@ -237,11 +315,38 @@ footer p {
         margin: 0 auto 20px;
     }
 
-    .employment-section {
-        padding: 20px;
+    header h1 {
+        font-size: 2.5rem;
     }
 
     .employment-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .project-section h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Small Devices (Mobile Phones) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .profile-section h2 {
+        font-size: 2rem;
+    }
+
+    .profile-section p {
+        font-size: 1rem;
+    }
+
+    .project-section h2 {
         font-size: 2.2rem;
     }
 
@@ -251,5 +356,13 @@ footer p {
 
     .job-card p, .job-card ul li {
         font-size: 1rem;
+    }
+
+    .employment-section {
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
     }
 }

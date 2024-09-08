@@ -215,19 +215,126 @@ header p {
     margin-bottom: 5px;
 }
 
-/* Footer */
-footer {
-    padding: 20px 0;
-    text-align: center;
-    background-color: #007BFF;
-    color: #fff;
-    border-top: 5px solid #0056b3;
+/* Project Page Specific Styling */
+.project-page {
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-left: 8px solid #007BFF;
 }
 
-footer p {
-    font-size: 1rem;
-    margin: 0;
+.project-page h1 {
+    font-size: 3rem;
+    color: #007BFF;
+    margin-bottom: 20px;
 }
+
+.project-page p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.project-page ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.project-page ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.project-page img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Project Page for Mobile Devices */
+@media (max-width: 768px) {
+    .project-page {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .project-page h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-page p, .project-page ul li {
+        font-size: 1rem;
+    }
+
+    .project-page img {
+        width: 100%;
+    }
+}
+
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.profile-section img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-right: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section div {
+    max-width: 600px;
+}
+
+.profile-section h2 {
+    font-size: 2.5rem;
+    color: #007BFF;
+}
+
+.profile-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Project Section */
+.project-section {
+    padding: 50px 0;
+}
+
+.project-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    color: #333;
+    position: relative;
+}
+
+.project-section h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 60px;
+    height: 4px;
+    background-color: #007BFF;
+    transform: translateX(-50%);
+}
+
+
+
 
 /* Media Queries for Responsiveness */
 
@@ -289,7 +396,21 @@ footer p {
         padding: 20px;
     }
 
-    footer p {
-        font-size: 0.9rem;
+    footer {
+        text-align: center;
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        font-size: 1rem;
+    }
+
+    footer a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
     }
 }

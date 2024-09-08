@@ -209,7 +209,6 @@ style
     margin-top: 10px;
 }
 
-/* Employment Section */
 .employment-section {
     margin: 50px 0;
     padding: 20px;
@@ -255,7 +254,6 @@ style
     color: #444;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .employment-section h2 {
         font-size: 2rem;

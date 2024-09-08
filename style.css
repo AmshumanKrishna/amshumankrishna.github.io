@@ -1,3 +1,4 @@
+/* General Styling */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -21,12 +22,14 @@ a:hover {
     color: #0056b3;
 }
 
+/* Container */
 .container {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
 }
 
+/* Header */
 header {
     background-color: #007BFF;
     color: #fff;
@@ -45,10 +48,13 @@ header p {
     margin-top: 5px;
 }
 
+/* Profile Section */
 .profile-section {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 50px 0;
+    justify-content: space-between;
 }
 
 .profile-section img {
@@ -74,6 +80,7 @@ header p {
     line-height: 1.8;
 }
 
+/* Project Section */
 .project-section {
     padding: 50px 0;
 }
@@ -137,6 +144,7 @@ header p {
     color: #444;
 }
 
+/* Employment Section */
 .employment-section {
     margin: 50px auto;
     padding: 30px;
@@ -207,6 +215,7 @@ header p {
     margin-bottom: 5px;
 }
 
+/* Footer */
 footer {
     padding: 20px 0;
     text-align: center;
@@ -220,7 +229,10 @@ footer p {
     margin: 0;
 }
 
-@media (max-width: 768px) {
+/* Media Queries for Responsiveness */
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1024px) {
     .profile-section {
         flex-direction: column;
         text-align: center;
@@ -230,11 +242,38 @@ footer p {
         margin: 0 auto 20px;
     }
 
-    .employment-section {
-        padding: 20px;
+    header h1 {
+        font-size: 2.5rem;
     }
 
     .employment-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .project-section h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Small Devices (Mobile Phones) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .profile-section h2 {
+        font-size: 2rem;
+    }
+
+    .profile-section p {
+        font-size: 1rem;
+    }
+
+    .project-section h2 {
         font-size: 2.2rem;
     }
 
@@ -244,5 +283,13 @@ footer p {
 
     .job-card p, .job-card ul li {
         font-size: 1rem;
+    }
+
+    .employment-section {
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
     }
 }

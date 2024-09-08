@@ -13,68 +13,28 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 30px 0;
-}
-
 /* Header */
 header {
     text-align: center;
     padding: 50px 0;
-    background-image: linear-gradient(to right, #007BFF, #0056b3);
+    background: linear-gradient(135deg, #007BFF, #0056b3);
     color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
 
 header h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: letter-spacing 0.3s ease;
+    margin-bottom: 10px;
 }
 
-header h1:hover {
-    letter-spacing: 4px;
-}
-
-/* About Section */
-.about-section {
-    background-color: #fff;
-    padding: 50px 0;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.about-section h2 {
-    font-size: 2.8rem;
-    color: #007BFF;
-    margin-bottom: 20px;
-    transition: color 0.3s ease;
-}
-
-.about-section h2:hover {
-    color: #0056b3;
-}
-
-.about-section p {
+header p {
     font-size: 1.2rem;
-    color: #555;
-    line-height: 1.8;
-    margin: 20px 0;
+    margin-bottom: 0;
 }
 
-/* Skills Section */
-.skills-section {
-    background-color: #f4f4f9;
-    padding: 50px 0;
-    text-align: center;
-}
+/* Profile Section */
 .profile-section {
     background-color: #fff;
     padding: 50px 0;
@@ -83,227 +43,137 @@ header h1:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
 }
 
-.skills-section h2 {
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #007BFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    border-color: #0056b3;
+}
+
+.profile-info h2 {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.profile-info p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Portfolio Overview */
+.portfolio-overview {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.portfolio-overview h2 {
     font-size: 2.5rem;
     color: #007BFF;
-    margin-bottom: 30px;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 10px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
 }
 
-.skills-section h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 80px;
-    height: 4px;
-    background-color: #007BFF;
-    transform: translateX(-50%);
-    transition: width 0.3s ease;
+.portfolio-overview p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
 }
 
-.skills-section h2:hover::after {
-    width: 120px;
+/* Mini Resume */
+.mini-resume {
+    background-color: #f4f4f9;
+    padding: 50px 0;
+    text-align: center;
 }
 
-.skills-list {
+.mini-resume h2 {
+    font-size: 2.5rem;
+    color: #007BFF;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.resume-overview {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.skill-item {
+.resume-item {
     background-color: #fff;
-    padding: 15px 30px;
-    margin: 10px;
+    padding: 20px;
+    margin: 15px;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(50% - 30px);
 }
 
-.skill-item:hover {
+.resume-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.skill-item h3 {
-    font-size: 1.5rem;
+.resume-item h3 {
+    font-size: 1.8rem;
     color: #007BFF;
     margin-bottom: 10px;
 }
 
-.skill-item p {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-/* Employment Section */
-.employment-section {
-    background-color: #fff;
-    padding: 50px 0;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-}
-
-.employment-section h2 {
-    font-size: 2.5rem;
-    color: #007BFF;
-    margin-bottom: 40px;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 10px;
-}
-
-.employment-section h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 80px;
-    height: 4px;
-    background-color: #007BFF;
-    transform: translateX(-50%);
-    transition: width 0.3s ease;
-}
-
-.employment-section h2:hover::after {
-    width: 120px;
-}
-
-/* Job Card */
-.job-card {
-    background-color: #fff;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.job-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.job-card h3 {
-    font-size: 1.8rem;
-    color: #007BFF;
-    margin-bottom: 15px;
-    transition: color 0.3s ease;
-}
-
-.job-card h3:hover {
-    color: #0056b3;
-}
-
-.job-card p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.7;
-    transition: color 0.3s ease;
-}
-
-.job-card p:hover {
-    color: #333;
-}
-
-/* Project Card */
-.project-card {
-    background-color: #fff;
-    width: 300px;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-left: 5px solid #007BFF;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.project-card h3 {
-    font-size: 1.8rem;
-    color: #007BFF;
-    margin-bottom: 15px;
-    transition: color 0.3s ease;
-}
-
-.project-card h3:hover {
-    color: #0056b3;
-}
-
-.project-card p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.7;
-    transition: color 0.3s ease;
-}
-
-.project-card p:hover {
-    color: #333;
-}
-
-/* Project Page */
-.project-page {
-    background-color: #fff;
-    padding: 50px 0;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-    margin: 0 auto;
-    max-width: 900px;
-    text-align: center;
-}
-
-.project-page h2 {
-    font-size: 2.5rem;
-    color: #007BFF;
-    margin-bottom: 20px;
-    transition: color 0.3s ease;
-}
-
-.project-page h2:hover {
-    color: #0056b3;
-}
-
-.project-page p {
+.resume-item p {
     font-size: 1.2rem;
     color: #555;
-    line-height: 1.8;
-    margin-bottom: 20px;
 }
 
-.project-page img {
-    width: 100%;
-    max-width: 700px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+/* Footer */
+footer {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.project-page .view-project-box {
-    margin-top: 0;
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
-    header h1 {
-        font-size: 3rem;
-    }
-
-    .project-card, .job-card {
-        width: 45%;
-    }
-
-    .about-section h2, .skills-section h2, .employment-section h2 {
-        font-size: 2rem;
-    }
-
-    .skill-item {
-        width: 45%;
+    .resume-item {
+        width: calc(50% - 20px);
     }
 }
 
@@ -312,12 +182,22 @@ header h1:hover {
         font-size: 2.5rem;
     }
 
-    .project-card, .job-card, .skill-item {
-        width: 100%;
+    .profile-img {
+        width: 120px;
+        height: 120px;
     }
 
-    .about-section h2, .skills-section h2, .employment-section h2 {
+    .profile-info h2 {
         font-size: 1.8rem;
+    }
+
+    .profile-info p, .portfolio-overview p, .resume-item p {
+        font-size: 1rem;
+    }
+
+    .resume-item {
+        width: 100%;
+        margin: 10px 0;
     }
 }
 
@@ -326,11 +206,16 @@ header h1:hover {
         font-size: 2rem;
     }
 
-    .about-section h2, .skills-section h2, .employment-section h2 {
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-info h2 {
         font-size: 1.5rem;
     }
 
-    .skill-item, .project-card, .job-card {
-        margin: 10px 0;
+    .profile-info p, .portfolio-overview p, .resume-item p {
+        font-size: 0.9rem;
     }
 }

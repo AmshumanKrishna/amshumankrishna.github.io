@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amshuman's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Your Name</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Amshuman's Portfolio</h1>
-            <p>Explore my work, skills, and experience.</p>
-        </div>
-    </header>
 
+
+    
     <section class="profile-section">
         <div class="container">
             <div class="profile-card">
@@ -25,43 +21,109 @@
             </div>
         </div>
     </section>
+  <!-- Navigation -->
+  <header id="header">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="portfolio-overview">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm Amshuman, a seasoned Application Developer specializing in modern technologies and innovative solutions. I am based in Toronto, Canada, and am passionate about pushing the boundaries of technology.</p>
-        </div>
-    </section>
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <div class="content">
+      <h1>Hello, I'm Amshuman Krishna</span></h1>
+      <p>Creative Full Stack Developer</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+  </section>
 
-    <section class="mini-resume">
-        <div class="container">
-            <h2>Mini Resume</h2>
-            <div class="resume-overview">
-                <div class="resume-item">
-                    <h3>Education</h3>
-                    <p>B.E. in Computer Science and Engineering from Rajalakshmi Engineering College, Chennai.</p>
-                </div>
-                <div class="resume-item">
-                    <h3>Experience</h3>
-                    <p>Application Developer at IBM (June 2016 - Present)</p>
-                    <p>Software Engineer at TCS (August 2014 - May 2016)</p>
-                </div>
-                <div class="resume-item">
-                    <h3>Skills</h3>
-                    <p>Java, Spring Boot, Microservices, SQL, Kafka, AWS</p>
-                </div>
-                <div class="resume-item">
-                    <h3>Projects</h3>
-                    <p>eCommerce Microservices, Loan On Card</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="content">
+      <h2>About Me</h2>
+      <p>I'm a passionate software developer with experience in building dynamic and scalable applications. My key skills include Java, Spring Boot, AWS, and Microservices.</p>
+    </div>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>Contact me at <a href="mailto:amshuman@example.com">amshumankkrishna@gmail.com</a></p>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="content">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <h3>Java</h3>
+          <div class="progress-bar"><div class="progress java"></div></div>
         </div>
-    </footer>
+        <div class="skill">
+          <h3>Spring Boot</h3>
+          <div class="progress-bar"><div class="progress spring"></div></div>
+        </div>
+        <div class="skill">
+          <h3>AWS</h3>
+          <div class="progress-bar"><div class="progress aws"></div></div>
+        </div>
+        <!-- Add more skills as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="content">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>American Express</h3>
+          <p>Description of the project goes here...</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Sainsburys</h3>
+          <p>Description of the project goes here...</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="content">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="amshumankrishna@gmail.com" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Amshuman krishna</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="scripts.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

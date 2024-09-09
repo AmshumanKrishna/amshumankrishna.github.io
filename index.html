@@ -3,33 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Amshuman</title>
-  <link rel="stylesheet" href="style.css">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Header Section -->
   <header>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><a href="#employment">Employment</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- About Section -->
+  <!-- About Me Section -->
   <section id="about">
     <div class="container">
-      <div class="profile-picture">
-        <img src="your-profile-pic.jpg" alt="Your Profile Picture">
+      <div class="profile">
+        <img src="your-profile-picture.jpg" alt="Profile Picture">
       </div>
       <div class="about-content">
-        <h1>Hello, I'm Amshuman</h1>
-        <p>Experienced Software Engineer specializing in Java, Spring Boot, Microservices, and AWS. Passionate about creating scalable web solutions and innovative applications.</p>
+        <h1>Hi, I'm [Your Name]</h1>
+        <p>I am a passionate software developer with experience in building innovative web and mobile applications. Specializing in full-stack development, I focus on delivering high-quality code and exceptional user experiences.</p>
       </div>
     </div>
   </section>
@@ -38,48 +37,40 @@
   <section id="skills">
     <div class="container">
       <h2>Skills</h2>
-      <div class="skills-list">
-        <div class="skill-item">
-          <h3>Java</h3>
-          <div class="progress-bar">
-            <div class="progress" style="width: 90%;"></div>
-          </div>
+      <div class="skillset">
+        <div class="skill">
+          <h3>HTML & CSS</h3>
+          <div class="progress-bar"><div class="progress html"></div></div>
         </div>
-        <div class="skill-item">
-          <h3>Spring Boot</h3>
-          <div class="progress-bar">
-            <div class="progress" style="width: 85%;"></div>
-          </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="progress-bar"><div class="progress js"></div></div>
         </div>
-        <div class="skill-item">
-          <h3>AWS</h3>
-          <div class="progress-bar">
-            <div class="progress" style="width: 80%;"></div>
-          </div>
+        <div class="skill">
+          <h3>React</h3>
+          <div class="progress-bar"><div class="progress react"></div></div>
         </div>
-        <div class="skill-item">
-          <h3>Microservices</h3>
-          <div class="progress-bar">
-            <div class="progress" style="width: 80%;"></div>
-          </div>
+        <div class="skill">
+          <h3>Node.js</h3>
+          <div class="progress-bar"><div class="progress node"></div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Experience Section -->
-  <section id="experience">
+  <!-- Employment Section -->
+  <section id="employment">
     <div class="container">
       <h2>Employment Details</h2>
       <div class="job">
-        <h3>Application Developer - IBM</h3>
-        <p><em>June 2016 - Present</em></p>
-        <p>Worked on Java-based enterprise applications, leading the development of microservices architecture, and leveraging AWS for cloud infrastructure management.</p>
+        <h3>Software Engineer - XYZ Company</h3>
+        <p><em>Jan 2021 - Present</em></p>
+        <p>Working as a full-stack developer focusing on web applications and improving user interfaces. Collaborated with teams to create scalable and high-performance solutions.</p>
       </div>
       <div class="job">
-        <h3>Software Engineer - TCS</h3>
-        <p><em>August 2014 - May 2016</em></p>
-        <p>Developed and maintained multiple projects in Java, collaborating with international teams to deliver solutions that aligned with business goals.</p>
+        <h3>Junior Developer - ABC Solutions</h3>
+        <p><em>July 2019 - Dec 2020</em></p>
+        <p>Worked on back-end services using Node.js and contributed to various client projects, improving performance and scalability.</p>
       </div>
     </div>
   </section>
@@ -88,34 +79,29 @@
   <section id="projects">
     <div class="container">
       <h2>Projects</h2>
-      <div class="project-item">
-        <h3>Project 1: E-Commerce Platform</h3>
-        <p>Developed a scalable e-commerce platform using Spring Boot, React, and AWS. Implemented payment gateways, product management, and user authentication.</p>
-      </div>
-      <div class="project-item">
-        <h3>Project 2: Cloud Microservices Architecture</h3>
-        <p>Led the development of a microservices architecture in AWS for a fintech application, improving scalability and reducing infrastructure costs.</p>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>Project 1: E-Commerce Website</h3>
+          <p>Developed a responsive e-commerce site using React and Node.js, integrated payment gateways and optimized for SEO.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 2: Social Media App</h3>
+          <p>Created a mobile-friendly social media app using React Native and Firebase, with real-time chat and notification features.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 3: Portfolio Website</h3>
+          <p>Designed and built a personal portfolio to showcase projects and employment experience using HTML, CSS, and JavaScript.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
-
+  <!-- Footer Section -->
   <footer>
-    <p>&copy; 2024 Amshuman. All Rights Reserved.</p>
+    <div class="container">
+      <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>

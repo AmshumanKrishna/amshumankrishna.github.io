@@ -71,21 +71,21 @@ header {
 }
 
 /* About Section */
-#about {
+.about {
   background-color: #fff;
   text-align: center;
   padding: 60px 0;
   animation: slideIn 1.5s ease-in-out;
 }
 
-#about p {
+.about p {
   max-width: 800px;
   margin: 0 auto;
   animation: fadeIn 1.5s ease-in;
 }
 
 /* Employment Section */
-#employment {
+.employment {
   background-color: #f0f4f8;
   padding: 60px 0;
 }
@@ -113,7 +113,7 @@ header {
 }
 
 /* Projects Section */
-#projects {
+.projects {
   padding: 60px 0;
 }
 

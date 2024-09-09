@@ -107,10 +107,11 @@
     border-radius: 10px;
   }
   
-  .html { width: 90%; background-color: #f16529; }
-  .js { width: 80%; background-color: #f7df1e; }
-  .react { width: 85%; background-color: #61dafb; }
-  .node { width: 75%; background-color: #68a063; }
+  .Java { width: 90%; background-color: #f16529; }
+  .SpringBoot { width: 80%; background-color: #f7df1e; }
+  .Microservices { width: 85%; background-color: #61dafb; }
+  .sql { width: 75%; background-color: #68a063; }
+  .Kafka { width: 60%; background-color: #9aa063; }
   
   /* Employment Section */
   #employment {

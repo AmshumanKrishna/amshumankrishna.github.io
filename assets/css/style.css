@@ -541,10 +541,11 @@ a.hoverline:hover {
   position: relative;
   top: 2px;
 }
-
+/*
 small {
   display: none;
 }
+  */
 
 .grey-text {
   color: #666 !important;

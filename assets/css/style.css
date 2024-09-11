@@ -18,7 +18,8 @@
 
 
 @media screen and (max-width: 768px) {
-  img.profile-pic {
+  profile-pic img {
+ /* or inline-block */
     width: 100%; /* or whatever width works best */
     height: auto;
   }
@@ -542,9 +543,6 @@ a.hoverline:hover {
   top: 2px;
 }
 
-small {
-  display: none;
-}
 
 .grey-text {
   color: #666 !important;

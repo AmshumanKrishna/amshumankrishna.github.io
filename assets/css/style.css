@@ -15,14 +15,9 @@
   border-radius: 50% !important;
 }
 
-
-
-@media screen and (max-width: 768px) {
-  profile-pic img {
- /* or inline-block */
-    width: 100%; /* or whatever width works best */
-    height: auto;
-  }
+.profile-pic img {
+  width: 100%;
+  height: auto;
 }
 
 .tracker {
@@ -543,6 +538,9 @@ a.hoverline:hover {
   top: 2px;
 }
 
+small {
+  display: none;
+}
 
 .grey-text {
   color: #666 !important;
